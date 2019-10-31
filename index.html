@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Costumes of Youi</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
+    />
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id='individual'>
+      <h1>INDIVIDUAL COSTUMES</h1>
+    </div>
+    <div id='team'\>
+      <h1>TEAM COSTUMES</h1>
+    </div>
+  </body>
+  <script>
+    // Add Individual Costumes
+    const Nick = {Name: "Nick", Costume: "Bob from Bob's burgers", url: "images/Nick.jpg"};
+    const Laura = {Name: "Laura", Costume: "Cloud", url: "images/Laura.jpg"}
+
+    let costumes = [Nick, Laura];
+    let costume = document.getElementById('individual');
+
+    for (i=0; i<costumes.length; i++) {
+      let element = document.createElement('DIV');
+      let image = document.createElement('IMG');
+      let personName = document.createElement('H2');
+      let costumeName = document.createElement('H3');
+      image.src = costumes[i].url;
+      personName.innerHTML = i+1 + ' ' + costumes[i].Name;
+      costumeName.innerHTML = costumes[i].Costume;
+      element.className = 'costume';
+      element.appendChild(image);
+      element.appendChild(personName);
+      element.appendChild(costumeName);
+      costume.appendChild(element);
+    }
+      // Add Team Costumes
+      const Food = {Costume: "Food", url: "images/Food.jpg"};
+      const Royalty = {Costume: "Royal Family", url: 'images/Royalty.jpg'}
+      const Team = {Costume: "Jason, Russ, and Neil", url: 'images/Team.jpg'}
+      
+      let teamCostumes = [Food, Royalty, Team];
+      let teamCostume = document.getElementById('team');
+  
+      for (i=0; i<teamCostumes.length; i++) {
+        let element = document.createElement('DIV');
+        let image = document.createElement('IMG');
+        let costumeName = document.createElement('H2');
+        image.src = teamCostumes[i].url;
+        costumeName.innerHTML = i+1 + ' ' + teamCostumes[i].Costume;
+        element.className = 'costume';
+        element.appendChild(image);
+        element.appendChild(costumeName);
+        teamCostume.appendChild(element);
+      }
+    </script>
+</html>
