@@ -2,7 +2,7 @@
 
 This is a place where the Youi team can put up photos of their halloween costumes. 
 
-Want to meet our friends? Head to [pets of youi page](http://nickwangyoui.github.io/costumesofyoui2019)
+Want to meet our friends? Head to [costumes of youi page](http://nickwangyoui.github.io/costumesofyoui2019)
 
 
 ## A little note about this website
