@@ -20,10 +20,11 @@
   </body>
   <script>
     // Add Individual Costumes
-    const Nick = {Name: "Nick", Costume: "Bob from Bob's burgers", url: "images/Nick.jpg"};
-    const Laura = {Name: "Laura", Costume: "Cloud", url: "images/Laura.jpg"}
-
-    let costumes = [Nick, Laura];
+    const Bob = {Costume: "Bob from Bob's burgers", url: "images/Nick.jpg"};
+    const Cloud = {Costume: "Cloud", url: "images/Laura.jpg"};
+    const DevilWitch = {Costume: "Devil Witch", url: "images/DevilWitch.jpg"};
+    const HollowKnight = {Costume: "Hollow Knight", url: "images/HollowKnight.jpg"};
+    let costumes = [Bob, Cloud, DevilWitch, HollowKnight];
     let costume = document.getElementById('individual');
 
     for (i=0; i<costumes.length; i++) {
@@ -32,8 +33,7 @@
       let personName = document.createElement('H2');
       let costumeName = document.createElement('H3');
       image.src = costumes[i].url;
-      personName.innerHTML = i+1 + ' ' + costumes[i].Name;
-      costumeName.innerHTML = costumes[i].Costume;
+      costumeName.innerHTML = i+1 + ' ' + costumes[i].Costume;
       element.className = 'costume';
       element.appendChild(image);
       element.appendChild(personName);
