@@ -27,7 +27,9 @@
     const LeafsFan = {Costume: "Leafs Fan", url: "images/LeafsFan.jpg"};
     const Future = {Costume: "Marty McFly (Back to the Future)", url: 'images/Future.jpg'}
     const AdventureTime = {Costume: "Finn & Jake (Adventure Time)", url: 'images/AdventureTime.jpg'}
+    const Timberlake = {Costume: "Justin Timberlake", url: 'images/Timberlake.jpg'}
     
+    const Spiderman = {Costume: "Spiderman", url: 'images/Spiderman.jpg'}
     
     let costumes = [
       Bob, 
@@ -36,7 +38,10 @@
       HollowKnight, 
       LeafsFan, 
       Future,
-      AdventureTime];
+      AdventureTime,
+      Timberlake,
+      Spiderman
+    ];
     let costume = document.getElementById('individual');
 
     for (i=0; i<costumes.length; i++) {
@@ -56,8 +61,14 @@
       const Food = {Costume: "Food", url: "images/Food.jpg"};
       const Royalty = {Costume: "Royal Family", url: 'images/Royalty.jpg'}
       const Team = {Costume: "Jason, Russ, and Neil", url: 'images/Team.jpg'}
+      const Monty = {Costume: "e are Monty Python - The Holy Grail", url: 'images/Monty.jpg'}
       
-      let teamCostumes = [Food, Royalty, Team];
+      let teamCostumes = [
+        Food, 
+        Royalty, 
+        Team,
+        Monty
+      ];
       let teamCostume = document.getElementById('team');
   
       for (i=0; i<teamCostumes.length; i++) {
